@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".About">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/username1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Welcome, nama!"
+            android:textColor="#FF6D05"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="_________________________________________"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF6D05"
+            android:layout_marginHorizontal="20dp"
+            android:text="Information"/>
+        <Button
+            android:id="@+id/map"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#FF6D05"
+            android:layout_marginHorizontal="20dp"
+            android:text="Map"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"/>
+    <ImageView
+        android:id="@+id/changeimg"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginVertical="20dp"
+        android:src="@drawable/information"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBtn2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home"
+            android:backgroundTint="#FF6D05"
+            />
+
+        <ImageButton
+            android:id="@+id/albumBtn2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_music"
+            android:backgroundTint="#FF6D05"
+            />
+
+        <ImageButton
+            android:id="@+id/aboutBtn2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_about"
+            android:backgroundTint="#FF6D05"
+            />
+
+        <ImageButton
+            android:id="@+id/logoutBtn2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_logout"
+            android:backgroundTint="#FF6D05"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

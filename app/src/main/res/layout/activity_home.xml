@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Home">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Welcome, nama!"
+            android:textColor="#FF6D05"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="_________________________________________"
+            android:textSize="20dp"
+            />
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imgcrs"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Top Selling Albums"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginVertical="15dp"
+            android:textStyle="bold"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/listView"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_home"
+            android:backgroundTint="#FF6D05"
+        />
+
+        <ImageButton
+            android:id="@+id/albumBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_music"
+            android:backgroundTint="#FF6D05"
+            />
+
+        <ImageButton
+            android:id="@+id/aboutBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_about"
+            android:backgroundTint="#FF6D05"
+            />
+
+        <ImageButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_logout"
+            android:backgroundTint="#FF6D05"
+            />
+
+    </LinearLayout>
+</LinearLayout>
